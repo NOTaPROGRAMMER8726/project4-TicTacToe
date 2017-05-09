@@ -1,5 +1,5 @@
-$(".board").hide()
-$("body").append('<div class="screen screen-start" id="start"><header><h1>Tic Tac Toe</h1><a href="#" class="button">Start game</a></header></div>')
+!function () {
+
 var clicks = 0;
 var randomLi;
 var playerOName;
@@ -22,6 +22,8 @@ $("li.box").attr("id", function(i) {
     return i+1
 })
 
+$(".board").hide()
+$("body").append('<div class="screen screen-start" id="start"><header><h1>Tic Tac Toe</h1><a href="#" class="button">Start game</a></header></div>')
 
 $(".button").click(function(e) {
     playerOName = prompt('Player-O, Enter your name.. If you click "cancel", The computer will play.')
@@ -236,3 +238,5 @@ $(".box").click(function() {
             });
         }
 });
+
+}();

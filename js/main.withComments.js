@@ -1,3 +1,5 @@
+//modular pattern
+!function () {
 //hide the tictactoe board
 $(".board").hide()
 //append the div provided for the "start" screen.
@@ -242,7 +244,7 @@ $(".box").click(function() {
                 $(".board").hide()//hide board
                 $("body").prepend(tieScreen)//append the provided "tie" div
                 clicks = 0; //set clicks to 0
-            $(".button").click(function() {//same event as above. 
+            $(".button").click(function() {//same event as above.
                 $("#finish").remove()
                 $(".board").show()
                 $("#player").addClass('active')
@@ -261,3 +263,5 @@ $(".box").click(function() {
         }
 
 });
+
+}();
